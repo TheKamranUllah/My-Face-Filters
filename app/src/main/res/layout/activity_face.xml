@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/topLayout"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:keepScreenOn="true">
+
+    <com.kamranullah.facespotter.ui.camera.CameraSourcePreview
+      android:id="@+id/preview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+        <com.kamranullah.facespotter.ui.camera.GraphicOverlay
+          android:id="@+id/faceOverlay"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+    </com.kamranullah.facespotter.ui.camera.CameraSourcePreview>
+
+    <ImageButton
+        android:id="@+id/face"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/face" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_background"
+        android:scrollbars="none"
+        android:layout_above="@+id/face"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/no_filter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background_select"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_filter" />
+
+            <ImageButton
+                android:id="@+id/red_hat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background"
+                android:scaleType="fitXY"
+                android:src="@drawable/red_hat" />
+
+            <ImageButton
+                android:id="@+id/hair"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background"
+                android:scaleType="fitXY"
+                android:src="@drawable/hair" />
+
+            <ImageButton
+                android:id="@+id/op"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background"
+                android:scaleType="fitXY"
+                android:src="@drawable/op" />
+
+            <ImageButton
+                android:id="@+id/snap"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background"
+                android:scaleType="fitXY"
+                android:src="@drawable/snap" />
+
+            <ImageButton
+                android:id="@+id/pig_nose"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background"
+                android:scaleType="fitXY"
+                android:src="@drawable/pig_nose_emoji" />
+
+            <ImageButton
+                android:id="@+id/glasses5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background"
+                android:scaleType="fitXY"
+                android:src="@drawable/glasses5" />
+
+
+            <ImageButton
+                android:id="@+id/mask2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background"
+                android:scaleType="fitXY"
+                android:src="@drawable/mask2" />
+
+
+            <ImageButton
+                android:id="@+id/dog"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background"
+                android:scaleType="fitXY"
+                android:src="@drawable/dog" />
+
+            <ImageButton
+                android:id="@+id/cat2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_background"
+                android:scaleType="fitXY"
+                android:src="@drawable/cat2" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
